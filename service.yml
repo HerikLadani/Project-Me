@@ -9,12 +9,4 @@ spec:
     matchLabels:
       apptype: frontend
       env: prod
-  template:
-    metadata:
-      labels:
-        apptype: frontend
-        env: prod
-    spec:
-      containers:
-      - name: nginx
-        image: nginx  
+      
