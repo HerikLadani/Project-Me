@@ -1,0 +1,7 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: herik-qa-testing
+spec:
+  # modify replicas according to your case
+  replicas: 10
