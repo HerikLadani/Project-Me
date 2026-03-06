@@ -1,20 +1,16 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: herik-frontend
+  name: herik-feature
 spec:
   # modify replicas according to your case
   replicas: 10
   selector:
     matchLabels:
-      apptype: frontend
-      env: prod
+      apptype: feature
+      env: feature
   template:
     metadata:
       labels:
-        apptype: frontend
-        env: prod
-    spec:
-      containers:
-      - name: nginx
-        image: nginx  
+        apptype: feature
+        env: feature
