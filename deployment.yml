@@ -1,16 +1,4 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: herik-feature
-spec:
-  # modify replicas according to your case
-  replicas: 10
-  selector:
-    matchLabels:
-      apptype: feature
-      env: feature
-  template:
-    metadata:
-      labels:
-        apptype: feature
-        env: feature
+  name: herik-feature 
